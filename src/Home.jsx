@@ -9,7 +9,10 @@ function Home() {
   const [data, setData] = useState([]);
     useEffect(() => {
         axios.get("https://mysql-student-crud-app-f552d548bcbd.herokuapp.com/")
-        .then(res => setData(res.data))
+        .then(res =>  {
+          console.log(res);
+          (res => setData(res.data))
+  })
         .catch(err => console.log(err))
     }, [])
 
