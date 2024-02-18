@@ -42,9 +42,9 @@ function Home() {
         <tbody>
           {data.map((student, index) => {
             return <tr key={index}>
-              <td>{student.id}</td>
-              <td>{student.name}</td>
-              <td>{student.email}</td>
+              <td>{student[0].id}</td>
+              <td>{student[0].name}</td>
+              <td>{student[0].email}</td>
               <td>
               <Link to={`/read/${student.id}`} className='btn btn-sm btn-info'>Read</Link>
               <Link to={`/edit/${student.id}`} className='btn btn-sm btn-primary mx-2'>Edit</Link>
