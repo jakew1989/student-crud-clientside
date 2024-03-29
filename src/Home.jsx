@@ -23,7 +23,17 @@ function Home() {
       .catch(err => console.log(err))
     }
   return (
-    <div className="d-flex vw-100 vh-100 bg-primary justify-content-center align-items-center">
+    <div className="flex-column d-flex vw-100 vh-100 bg-primary justify-content-center align-items-center">
+    <div className="w-70 bg-white rounded p-3 position-relative">
+      <h2>About</h2>
+      <p>Introducing my CRUD (create, read, update, delete) app that allows the user to add, delete and modify students name and email. The list is auto-incrementing so each user added will have its own unique ID.</p>
+      <br />
+      <p>Using Axios, requests are made to a local server which in turn uses express to execute database queries.</p>.
+      <br />
+      <p>The database was created using mySQL workbench and is stored in a Heroku server. Feel free to add, delete and modify the students yourself!</p>
+      
+      
+    </div>
     <div id="container" className='w-70 bg-white rounded p-3 position-relative'>
       <div className='d-flex justify-content-between title-container'>
         <h2>Student List</h2>
